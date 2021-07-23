@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM | ADD MONEY</title>
+    <link rel="stylesheet" href="add money.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+
+alert("Success!!\nMoney has been added")
+  });
+});
+</script>
+</head>
+  </head>
+  <body>
+    <header class="show">
+      <h1>
+        <big><b> Bank Name</b></big>
+      </h1>
+    </header>
+
+    <nav>
+      <b>
+        <a href="temp1.html" >Home</a>
+
+        <a href="#">Checkbook</a>
+        <a href="#">Profile</a>
+        <a href="banking.html">Banking</a>
+        
+        <a href="#">Contact us</a>
+      </b>
+    </nav>
+
+    <div class="main">
+        <form action="" >
+        <h1 class="heading"><b> ADD MONEY      </b>    </h1>
+        <div class="main1">
+            <p class="part1">ENTER THE AMOUNT: <input type="number" name="number" id="number" required min="100" max="10000"> </p>
+        
+        </div>
+        <div class="sub">
+         
+          <input type="submit" value="ADD TO PRIMARY ACCOUNT" class="submit" >
+          <input type="submit" value="ADD TO SAVING ACCOUNT" class="submit" onsubmit="myFunction()">
+        </div>
+    </div>
+    
+          
+      
+    
+</div>
+</form>
+    </div>
+    
+    
+  <script>
+    document.getElementById("submit").addEventListener("input", myFunction);
+
+      function myFunction() {
+         
+
+          swal("HELLO!!");
+        
+      }
+
+      </script>
+  </body>
+</html>
